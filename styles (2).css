@@ -1,0 +1,815 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #ffffff;
+  cursor: url("../img/Mouse.svg") 16.5 16.5, default; }
+  body a {
+    cursor: url("../img/Mouse_Click.svg") 15 15, pointer !important;
+    z-index: 99999;
+    display: inline-block; }
+
+h2 {
+  color: #ffffff;
+  font-family: 'Chivo';
+  font-weight: 400;
+  font-size: 20px; }
+  @media screen and (max-width: 480px) {
+    h2 {
+      font-size: 16px; } }
+
+p.head {
+  color: #96969b;
+  font-family: 'Chivo';
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.25; }
+  @media screen and (min-width: 768px) {
+    p.head {
+      font-size: 30px; } }
+  p.head span {
+    color: #ffffff; }
+
+p.faldon {
+  color: #ffffff;
+  font-family: 'Chivo';
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.25; }
+  @media screen and (max-width: 480px) {
+    p.faldon {
+      font-size: 20px; } }
+
+.foot {
+  padding: 3em 0;
+  background-color: #ff374b; }
+  .foot p {
+    font-family: 'Chivo';
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    max-width: 285px;
+    text-align: center; }
+  .foot .subrayado {
+    font-weight: 700;
+    text-decoration: underline #ffffff;
+    color: #ffffff;
+    padding: 0; }
+    .foot .subrayado a {
+      cursor: url("../img/Mouse_Click.svg") 15 15, pointer !important;
+      text-decoration: none;
+      color: #ffffff; }
+
+.head {
+  opacity: 0; }
+
+.ventaja {
+  opacity: 0; }
+
+.trackinn div {
+  opacity: 0; }
+
+.trackinn-description div {
+  opacity: 0; }
+
+.trackinn-description-2 div {
+  opacity: 0; }
+
+.ecosistema img {
+  opacity: 0; }
+
+.texto {
+  opacity: 0; }
+
+.ecosistema div p {
+  opacity: 1; }
+
+.ecosistema div .texto {
+  opacity: 0; }
+
+.ecosistema div h3 {
+  opacity: 0; }
+
+.ecosistema div hr {
+  opacity: 0; }
+
+.la-luz div {
+  opacity: 0; }
+
+.la-luz-description p {
+  opacity: 0; }
+
+.la-luz-description img {
+  opacity: 0; }
+
+.body {
+  overflow: hidden;
+  position: relative; }
+
+.primeraPagina {
+  background-image: url("../img/Head_Web_Contacto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+header {
+  height: 65px; }
+  header .contenedor-logotipo {
+    width: 150px;
+    margin: 0;
+    position: absolute;
+    top: 5px;
+    left: 10px; }
+    header .contenedor-logotipo a {
+      width: 100%;
+      height: 100%; }
+  header .card {
+    z-index: 999;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: calc(100vh - 65px);
+    background-color: #ff374b; }
+    header .card ul {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      list-style: none; }
+      header .card ul li a {
+        width: 100%;
+        font-family: 'Chivo';
+        font-weight: 400;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 4;
+        letter-spacing: 0.1rem; }
+        @media only screen and (max-width: 768px) and (orientation: landscape) {
+          header .card ul li a {
+            line-height: 2; } }
+        @media only screen and (min-width: 600px) and (orientation: portrait) {
+          header .card ul li a {
+            font-size: 24px; } }
+
+button {
+  position: absolute;
+  top: 3px;
+  right: 15px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none transparent; }
+  button:focus {
+    outline: 1px none; }
+
+.menu-navegacion {
+  z-index: 9999;
+  height: 25px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  margin: 11px auto;
+  width: 40px; }
+  .menu-navegacion .icono-burger, .menu-navegacion .icono-burger:after, .menu-navegacion .icono-burger:before {
+    color: #ffffff;
+    display: block;
+    position: absolute;
+    top: 8px;
+    height: 1px;
+    width: 0;
+    right: 0;
+    background: #ffffff;
+    border-radius: 2px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out; }
+    .menu-navegacion .icono-burger:after {
+      content: "";
+      top: 3px;
+      width: 20px; }
+      @media only screen and (min-width: 736px) and (orientation: portrait) {
+        .menu-navegacion .icono-burger:after {
+          width: 30px;
+          top: 7px; } }
+    .menu-navegacion .icono-burger:before {
+      content: "";
+      top: 10px;
+      width: 20px; }
+      @media only screen and (min-width: 736px) and (orientation: portrait) {
+        .menu-navegacion .icono-burger:before {
+          width: 30px;
+          top: 19px; } }
+
+.open .icono-burger:after {
+  transform: rotate(45deg) !important;
+  top: 0 !important;
+  background-color: #ffffff !important; }
+  @media only screen and (min-width: 736px) and (orientation: portrait) {
+    .open .icono-burger:after {
+      top: 7px !important; } }
+
+.open .icono-burger:before {
+  transform: rotate(-45deg) !important;
+  top: 0 !important;
+  background-color: #ffffff !important; }
+  @media only screen and (min-width: 736px) and (orientation: portrait) {
+    .open .icono-burger:before {
+      top: 7px !important; } }
+
+@media screen and (min-width: 768px) {
+  header .contenedor-logotipo {
+    left: 3%; } }
+
+@media screen and (min-width: 1024px) {
+  header {
+    position: relative;
+    height: 65px; }
+    header .card {
+      overflow: hidden;
+      background-color: transparent;
+      border: none transparent;
+      position: absolute;
+      height: 55px !important;
+      width: 70%;
+      top: 10px;
+      right: 9%; } }
+    @media screen and (min-width: 1024px) and (max-width: 1100px) {
+      header .card {
+        right: 40px; } }
+
+@media screen and (min-width: 1024px) {
+      header .card ul {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        list-style: none; }
+        header .card ul li a {
+          width: 100%;
+          padding: 0.7rem 0;
+          margin: 0 .8rem;
+          font-family: 'Chivo';
+          text-decoration: none;
+          color: #ffffff;
+          font-size: 12px;
+          line-height: 1.5;
+          letter-spacing: 0.1rem; }
+    header .contenedor-logotipo {
+      top: 9px;
+      left: 9%; } }
+    @media screen and (min-width: 1024px) and (max-width: 1100px) {
+      header .contenedor-logotipo {
+        left: 5%; } }
+
+@media screen and (min-width: 1024px) {
+  .active {
+    color: #ff374b !important; } }
+
+.openMenu {
+  display: none; }
+
+.pageHome {
+  background-image: url("../img/Head_Web_Home.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.head-home {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100% - 65px);
+  overflow: hidden; }
+  @media screen and (min-width: 1300px) {
+    .head-home {
+      height: calc(100vh - 65px); } }
+  .head-home .slider {
+    width: 100%;
+    height: 100%; }
+    .head-home .slider .slide {
+      display: inline-flex;
+      align-items: center;
+      height: 100%;
+      width: auto;
+      animation: slider 20s infinite linear; }
+      .head-home .slider .slide .imagenes {
+        font-family: Arial;
+        font-size: 16px;
+        line-height: 100px;
+        height: 100%;
+        flex: 0 0 auto;
+        text-align: center;
+        width: 666px; }
+        @media screen and (min-width: 768px) {
+          .head-home .slider .slide .imagenes {
+            width: 1083px; } }
+        @media screen and (min-width: 1200px) {
+          .head-home .slider .slide .imagenes {
+            width: 1500px; } }
+        .head-home .slider .slide .imagenes .innovation {
+          width: 400px; }
+          @media screen and (min-width: 768px) {
+            .head-home .slider .slide .imagenes .innovation {
+              width: 650px; } }
+          @media screen and (min-width: 1200px) {
+            .head-home .slider .slide .imagenes .innovation {
+              width: 900px; } }
+
+.invisible {
+  display: none; }
+
+@keyframes slider {
+  to {
+    transform: translateX(-50%); } }
+
+.scrollDownVentajas {
+  width: 30px;
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  left: 50%;
+  cursor: url("../img/Mouse_Click.svg") 15 15, pointer; }
+  @media only screen and (max-width: 736px) and (orientation: landscape) {
+    .scrollDownVentajas {
+      display: none; } }
+
+.pageVentajas {
+  background-image: url("../img/Head_Web_Ventajas.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.head-ventajas {
+  position: relative; }
+  .head-ventajas .head .titular-ventajas {
+    max-width: 500px;
+    height: calc(100% - 65px); }
+    .head-ventajas .head .titular-ventajas h2 {
+      margin-top: -65px;
+      margin-bottom: 2em; }
+      @media only screen and (min-width: 736px) and (orientation: portrait) {
+        .head-ventajas .head .titular-ventajas h2 {
+          width: 550px;
+          font-size: 24px; } }
+      @media only screen and (max-width: 736px) and (orientation: landscape) {
+        .head-ventajas .head .titular-ventajas h2 {
+          margin-top: 1em;
+          margin-bottom: 1em; } }
+    @media only screen and (min-width: 736px) and (orientation: portrait) {
+      .head-ventajas .head .titular-ventajas p {
+        width: 550px;
+        font-size: 34px;
+        line-height: 1.5; } }
+
+.ventajas {
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+
+.ventaja {
+  max-width: 400px;
+  text-align: center; }
+  .ventaja .borde {
+    border-left: 1px solid #dbe5e5;
+    margin-bottom: 4rem; }
+  .ventaja h3 {
+    font-family: 'Chivo';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: left;
+    color: #ff374b;
+    padding-left: 1rem;
+    margin-top: -.2rem; }
+  .ventaja p {
+    font-family: 'Chivo';
+    font-size: 14px;
+    text-align: left;
+    padding-left: 1rem;
+    margin-bottom: -.3rem; }
+
+.icono {
+  color: #ff374b;
+  text-align: left;
+  display: block;
+  margin: 1rem 1rem; }
+
+.scrollDownQueEs {
+  width: 30px;
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  left: 50%;
+  cursor: url("../img/Mouse_Click.svg") 15 15, pointer; }
+  @media only screen and (max-width: 736px) and (orientation: landscape) {
+    .scrollDownQueEs {
+      display: none; } }
+
+.pageQueEs {
+  background-image: url("../img/Head_Web_Trackinn.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.head-queEs {
+  position: relative; }
+  .head-queEs .head .titular-queEs {
+    max-width: 500px;
+    height: calc(100% - 65px); }
+    .head-queEs .head .titular-queEs p {
+      font-family: 'Chivo';
+      font-weight: 300;
+      font-size: 30px;
+      margin-left: .5rem;
+      line-height: 1.25;
+      color: #ffffff; }
+      @media screen and (max-width: 480px) {
+        .head-queEs .head .titular-queEs p {
+          font-size: 22px; } }
+      @media only screen and (max-width: 736px) and (orientation: landscape) {
+        .head-queEs .head .titular-queEs p {
+          font-size: 20px;
+          max-width: 400px; } }
+      @media only screen and (min-width: 736px) and (orientation: portrait) {
+        .head-queEs .head .titular-queEs p {
+          width: 550px;
+          font-size: 34px;
+          line-height: 1.5; } }
+    .head-queEs .head .titular-queEs img {
+      margin-top: -65px;
+      margin-bottom: 2rem; }
+      @media only screen and (max-width: 736px) and (orientation: landscape) {
+        .head-queEs .head .titular-queEs img {
+          width: 300px;
+          margin-top: 4rem;
+          margin-top: 1em;
+          margin-bottom: 1em; } }
+      @media only screen and (max-width: 736px) and (orientation: portrait) {
+        .head-queEs .head .titular-queEs img {
+          width: 250px; } }
+      @media only screen and (min-width: 736px) and (orientation: portrait) {
+        .head-queEs .head .titular-queEs img {
+          width: 500px; } }
+
+.trackinn div {
+  padding-left: 0;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  overflow-x: hidden !important;
+  max-width: 500px; }
+  @media screen and (max-width: 575px) {
+    .trackinn div {
+      margin-left: 1rem; } }
+  .trackinn div h3 {
+    font-family: 'Chivo';
+    font-size: 30px;
+    color: #ff374b;
+    line-height: 1.25; }
+    @media screen and (max-width: 480px) {
+      .trackinn div h3 {
+        font-size: 24px; } }
+    .trackinn div h3 span {
+      font-weight: 300; }
+  .trackinn div p {
+    font-family: 'Chivo';
+    font-weight: 300;
+    color: #18181e;
+    font-size: 30px;
+    line-height: 1.25; }
+    @media screen and (max-width: 480px) {
+      .trackinn div p {
+        font-size: 24px; } }
+
+.trackinn-description div {
+  max-width: 600px;
+  border-left: 1px solid #dbe5e5;
+  margin-bottom: 3rem; }
+  @media screen and (max-width: 575px) {
+    .trackinn-description div {
+      margin-left: 1rem; } }
+  .trackinn-description div p {
+    font-size: 16px;
+    font-family: 'Chivo';
+    padding-left: 1rem; }
+    @media screen and (max-width: 575px) {
+      .trackinn-description div p {
+        padding-left: .5rem; } }
+    .trackinn-description div p span {
+      color: #ff374b; }
+  .trackinn-description div .final {
+    margin-bottom: 0; }
+
+.trackinn-description-2 div {
+  max-width: 600px;
+  margin-bottom: 5rem; }
+  @media screen and (max-width: 575px) {
+    .trackinn-description-2 div {
+      margin-left: 1rem; } }
+  .trackinn-description-2 div ul {
+    list-style-type: circle;
+    padding-left: 0; }
+    @media screen and (max-width: 575px) {
+      .trackinn-description-2 div ul {
+        padding-left: .5rem; } }
+    .trackinn-description-2 div ul li {
+      padding-left: 1rem;
+      color: #ff374b;
+      font-family: 'Chivo';
+      font-size: 16px;
+      padding-bottom: .5rem; }
+      @media screen and (max-width: 575px) {
+        .trackinn-description-2 div ul li {
+          padding-left: .5rem; } }
+      .trackinn-description-2 div ul li span {
+        color: #18181e; }
+
+.scrollDownLiFi {
+  width: 30px;
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  left: 50%;
+  cursor: url("../img/Mouse_Click.svg") 15 15, pointer; }
+  @media only screen and (max-width: 736px) and (orientation: landscape) {
+    .scrollDownLiFi {
+      display: none; } }
+
+.pageLifi {
+  background-image: url("../img/Head_Web_Lifi.jpg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.head-lifi {
+  position: relative; }
+  .head-lifi .head .titular-lifi {
+    max-width: 500px;
+    height: calc(100% - 65px); }
+    .head-lifi .head .titular-lifi h2 {
+      margin-top: -65px;
+      margin-bottom: 2em; }
+      @media only screen and (min-width: 736px) and (orientation: portrait) {
+        .head-lifi .head .titular-lifi h2 {
+          width: 550px;
+          font-size: 24px; } }
+      @media only screen and (max-width: 736px) and (orientation: landscape) {
+        .head-lifi .head .titular-lifi h2 {
+          margin-top: 1em;
+          margin-bottom: 1em; } }
+    @media only screen and (min-width: 736px) and (orientation: portrait) {
+      .head-lifi .head .titular-lifi p {
+        width: 550px;
+        font-size: 34px;
+        line-height: 1.5; } }
+
+.ecosistema div {
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+  .ecosistema div .infografiaLiFi {
+    margin-top: 10rem; }
+  .ecosistema div h3 {
+    font-family: 'Chivo';
+    font-weight: 400;
+    font-size: 30px;
+    color: #ff374b;
+    line-height: 1.25; }
+    @media screen and (max-width: 480px) {
+      .ecosistema div h3 {
+        font-size: 24px; } }
+    .ecosistema div h3 span {
+      font-weight: 300; }
+  .ecosistema div p.destacado {
+    max-width: 470px;
+    font-size: 30px;
+    color: #18181e;
+    font-family: 'Chivo';
+    font-weight: 300;
+    padding-bottom: 1rem; }
+  .ecosistema div hr {
+    height: 1px;
+    width: 15%;
+    background-color: #ff374b;
+    margin-left: 0;
+    border-top: 0;
+    margin-bottom: 2rem; }
+  .ecosistema div p.texto {
+    max-width: 480px;
+    font-size: 16px;
+    font-family: 'Chivo';
+    font-weight: 400; }
+    .ecosistema div p.texto span {
+      color: #ff374b; }
+
+.la-luz div {
+  padding-left: 0;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  overflow-x: hidden !important;
+  max-width: 400px; }
+  @media screen and (max-width: 575px) {
+    .la-luz div {
+      margin-left: 1rem; } }
+  .la-luz div .down {
+    margin-bottom: 1rem;
+    margin-top: 3rem; }
+  .la-luz div h3 {
+    font-family: 'Chivo';
+    font-weight: 400;
+    font-size: 30px;
+    color: #ff374b;
+    line-height: 1.25; }
+    @media screen and (max-width: 480px) {
+      .la-luz div h3 {
+        font-size: 24px; } }
+    .la-luz div h3 span {
+      font-weight: 300; }
+  .la-luz div p {
+    font-family: 'Chivo';
+    font-weight: 300;
+    font-size: 30px;
+    color: #18181e;
+    line-height: 1.25; }
+    @media screen and (max-width: 480px) {
+      .la-luz div p {
+        font-size: 24px; } }
+
+.la-luz-description div {
+  max-width: 600px; }
+  @media screen and (max-width: 575px) {
+    .la-luz-description div {
+      margin-left: 1rem; } }
+  .la-luz-description div hr {
+    height: 1px;
+    width: 15%;
+    background-color: #ff374b;
+    margin-left: 0;
+    border-top: 0;
+    margin-bottom: 3rem; }
+  .la-luz-description div p {
+    font-size: 14px;
+    font-family: 'Chivo'; }
+    .la-luz-description div p span {
+      color: #ff374b; }
+
+.foot-lifi {
+  margin-top: 100px !important; }
+
+.scrollDown {
+  width: 30px;
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  left: 50%;
+  cursor: url("../img/Mouse_Click.svg") 15 15, pointer; }
+  @media only screen and (max-width: 736px) and (orientation: landscape) {
+    .scrollDown {
+      display: none; } }
+
+.pageAplicaciones {
+  background-image: url("../img/Head_Web_Aplicaciones.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.head-aplicaciones {
+  position: relative; }
+  .head-aplicaciones .head .titular-aplicaciones {
+    max-width: 500px;
+    height: calc(100% - 65px); }
+    .head-aplicaciones .head .titular-aplicaciones h2 {
+      margin-top: -65px;
+      margin-bottom: 2em; }
+      @media only screen and (min-width: 736px) and (orientation: portrait) {
+        .head-aplicaciones .head .titular-aplicaciones h2 {
+          width: 550px;
+          font-size: 24px; } }
+      @media only screen and (max-width: 736px) and (orientation: landscape) {
+        .head-aplicaciones .head .titular-aplicaciones h2 {
+          margin-top: 1em;
+          margin-bottom: 1em; } }
+    @media only screen and (min-width: 736px) and (orientation: portrait) {
+      .head-aplicaciones .head .titular-aplicaciones p {
+        width: 550px;
+        font-size: 34px;
+        line-height: 1.5; } }
+
+.faldon {
+  background-color: #ff374b; }
+  .faldon p {
+    max-width: 550px;
+    text-align: center;
+    padding: 3em 0; }
+
+.container-aplicaciones {
+  overflow-x: hidden !important;
+  overflow-y: hidden !important; }
+  .container-aplicaciones .aplicaciones .aplicacion {
+    padding: 0; }
+    .container-aplicaciones .aplicaciones .aplicacion .hovereffect {
+      position: relative; }
+      .container-aplicaciones .aplicaciones .aplicacion .hovereffect img {
+        width: 100%; }
+      .container-aplicaciones .aplicaciones .aplicacion .hovereffect .overlay {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: auto;
+        bottom: 0; }
+        .container-aplicaciones .aplicaciones .aplicacion .hovereffect .overlay .IconoFlecha {
+          margin-left: 2rem;
+          margin-bottom: 1rem; }
+        .container-aplicaciones .aplicaciones .aplicacion .hovereffect .overlay h4 {
+          padding: 0 2rem;
+          color: #ffffff;
+          font-family: 'Chivo';
+          font-weight: 300;
+          font-size: 22px; }
+          @media screen and (max-width: 480px) {
+            .container-aplicaciones .aplicaciones .aplicacion .hovereffect .overlay h4 {
+              font-size: 20px; } }
+          .container-aplicaciones .aplicaciones .aplicacion .hovereffect .overlay h4 span {
+            font-weight: 400; }
+        .container-aplicaciones .aplicaciones .aplicacion .hovereffect .overlay p {
+          padding: 1rem 2rem 0 2rem;
+          color: #ffffff;
+          font-size: 16px;
+          font-family: 'Chivo';
+          margin-bottom: 0; }
+
+.aplicacion:hover .overlay {
+  height: 14.13em;
+  transition: height 300ms ease-out; }
+  @media screen and (min-width: 1200px) and (max-width: 1300px) {
+    .aplicacion:hover .overlay {
+      height: 14.13em; } }
+  @media screen and (min-width: 720px) and (max-width: 875px) {
+    .aplicacion:hover .overlay {
+      height: 14.13em; } }
+  @media screen and (max-width: 480px) {
+    .aplicacion:hover .overlay {
+      height: 16em; } }
+  .aplicacion:hover .overlay .IconoFlecha {
+    transform: rotate(180deg); }
+  .aplicacion:hover .overlay p {
+    height: 7.45em;
+    background-color: #ff374b;
+    opacity: 1;
+    transition: opacity 500ms 300ms ease-out, background-color 500ms 300ms ease-out, height 500ms ease-out; }
+    @media screen and (min-width: 1200px) and (max-width: 1300px) {
+      .aplicacion:hover .overlay p {
+        height: 7.45em; } }
+    @media screen and (min-width: 765px) and (max-width: 875px) {
+      .aplicacion:hover .overlay p {
+        height: 7.45em; } }
+    @media screen and (max-width: 480px) {
+      .aplicacion:hover .overlay p {
+        height: 12em; } }
+
+.aplicacion .overlay {
+  height: 7em;
+  transition: height 500ms 100ms ease-out; }
+  .aplicacion .overlay p {
+    height: 0;
+    opacity: 0;
+    background-color: rgba(255, 55, 75, 0);
+    transition: opacity 100ms ease-out, background-color 500ms ease-out, height 500ms ease-out; }
+
+@media screen and (max-width: 767px) {
+  .app-8,
+  .app-9 {
+    display: none; } }
+
+@media screen and (max-width: 1200px) {
+  .app-9 {
+    display: none; } }
+
+.head-contacta .head .titular-contacta {
+  max-width: 600px;
+  height: calc(100vh - 65px); }
+  .head-contacta .head .titular-contacta p {
+    color: #ffffff;
+    font-family: "Chivo" !important;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 1.5; }
+    @media only screen and (min-width: 736px) and (orientation: portrait) {
+      .head-contacta .head .titular-contacta p {
+        width: 550px;
+        font-size: 28px;
+        line-height: 1.5; } }
+    .head-contacta .head .titular-contacta p span {
+      color: #96969b; }
+    .head-contacta .head .titular-contacta p .hablemos {
+      font-weight: 400;
+      color: #ffffff; }
